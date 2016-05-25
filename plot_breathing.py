@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 sys.path.insert(0, '../my_span_package') # Adds higher directory to python modules path.
 import cir_class as cir
 
-fname = 'data/2016_05_03/test_peter_13bpm_new.txt'
+fname = 'data/2016_05_03/test_peter_13bpm.txt'
 
 my_breather = cir.breather(N_up=16,adj_type='l',fname=fname,fs=None,win_len=30)
 
