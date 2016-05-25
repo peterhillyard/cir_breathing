@@ -13,9 +13,9 @@ import matplotlib.pyplot as plt
 sys.path.insert(0, '../my_span_package') # Adds higher directory to python modules path.
 import cir_class as cir
 
-fname = 'data/2016_05_10/test_12bpm.txt'
+fname = 'data/2016_05_03/test_peter_13bpm_new.txt'
 
-my_breather = cir.breather(N_up=8,adj_type='pl',fname=fname,fs=None,win_len=30)
+my_breather = cir.breather(N_up=16,adj_type='l',fname=fname,fs=None,win_len=30)
 
 br_rate_vec = []
 timestamp_vec = []
@@ -33,5 +33,4 @@ timestamp_vec = np.array(timestamp_vec)
 
 plt.plot(timestamp_vec,br_rate_vec)
 plt.show()
-        
     
