@@ -11,14 +11,15 @@ sys.path.insert(0, '../my_span_package') # Adds higher directory to python modul
 import cir_class as cir
 
 # Parameters
-fname = 'test_peter_13bpm.txt'
-my_cir_obj = cir.cir_power_class(N_up=8,adj_type='pl')
+N_up=16
+fname = 'test_13bpm.txt'
+my_cir_obj = cir.cir_power_class(N_up,adj_type='pl')
 power_vec = []
 pdp_mat = []
 phase_mat = []
 time_vec = []
 
-with open('data/2016_05_03/' + fname,'r') as f:
+with open('data/2016_05_10/' + fname,'r') as f:
     for line in f:
         
         if my_cir_obj.observe(line) == 0:
@@ -42,7 +43,7 @@ if os.path.isfile('data/xings/' + fname):
 else:
     xings = None
     
-plt_idx = 8*8+0
+plt_idx = 5*N_up+12
 plt.subplot(3,1,1)
 plt.plot(time_vec,(phase_mat[plt_idx,:]),'k-')
 plt.ylabel('Phase (radian)')
