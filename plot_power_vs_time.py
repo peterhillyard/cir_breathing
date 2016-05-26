@@ -12,14 +12,14 @@ import cir_class as cir
 
 # Parameters
 N_up=16
-fname = 'test_13bpm.txt'
+fname = 'alex_uncontrolled_2.txt'
 my_cir_obj = cir.cir_power_class(N_up,adj_type='pl')
 power_vec = []
 pdp_mat = []
 phase_mat = []
 time_vec = []
 
-with open('data/2016_05_10/' + fname,'r') as f:
+with open('data/2016_05_26/' + fname,'r') as f:
     for line in f:
         
         if my_cir_obj.observe(line) == 0:
