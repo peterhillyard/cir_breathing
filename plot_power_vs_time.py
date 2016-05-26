@@ -11,7 +11,7 @@ sys.path.insert(0, '../my_span_package') # Adds higher directory to python modul
 import cir_class as cir
 
 # Parameters
-fname = 'test_peter_13bpm_new.txt'
+fname = 'test_peter_13bpm.txt'
 my_cir_obj = cir.cir_power_class(N_up=8,adj_type='pl')
 power_vec = []
 pdp_mat = []
