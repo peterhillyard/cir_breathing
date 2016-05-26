@@ -1,7 +1,7 @@
 '''
 Created on May 24, 2016
 
-@author: pete
+@author: Peter Hillyard
 '''
 
 # This script uses the breather class to estimate the breathing rate from
@@ -13,7 +13,7 @@ import matplotlib.pyplot as plt
 sys.path.insert(0, '../my_span_package') # Adds higher directory to python modules path.
 import cir_class as cir
 
-fname = 'data/2016_05_03/test_shuyu_10bpm.txt'
+fname = 'data/2016_04_27/test_peter_15bpm.txt'
 
 my_breather = cir.breather(N_up=16,adj_type='pl',fname=fname,fs=None,win_len=30)
 
